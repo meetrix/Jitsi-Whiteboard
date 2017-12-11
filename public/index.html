@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Nxtbase</title>
+
+    <script>
+        var loc="supuni";
+        function go(loc) {
+            document.getElementById("jitsi").innerHTML = loc ;
+        }
+    </script>
+</head>
+<body style="overflow: hidden">
+<div style="width: 100%;height: 100%">
+    <div id ="togetherjs" style="float:left; width: 50%; height: 100%">
+        <iframe
+                src="https://whiteboard.siplo.lk/whiteboard/test"
+                style="overflow:hidden;height:100vh;width:50vw">
+        </iframe>
+    </div>
+    <div  style="float:right; width: 50%; height: 100%">
+        <iframe id ="jitsi"
+                src="https://meet.nxtbase.net/1234"
+                style="overflow:hidden;height:100vh;width:50vw">
+        </iframe>
+    </div>
+</div>
+</body>
+</html>
