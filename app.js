@@ -10,8 +10,8 @@ var index = require('./routes/index');
 var app = express();
 var fs = require('fs');
 
-var privateKey  = fs.readFileSync('cred/ssl-cert-snakeoil.key', 'utf8');
-var certificate = fs.readFileSync('cred/ssl-cert-snakeoil.pem', 'utf8');
+var privateKey  = fs.readFileSync('cred/privkey.pem', 'utf8');
+var certificate = fs.readFileSync('cred/fullchain.pem', 'utf8');
 var credentials = {key: privateKey, cert: certificate};
 var https = require('https').Server(credentials,app);
 
